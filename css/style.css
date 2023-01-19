@@ -2,11 +2,15 @@
     font-family: MullerReg;
     src: url(/fonts/MullerNarrow-Light.woff);
 }
+@font-face {
+    font-family: MullerBold;
+    src: url(/fonts/MullerExtraBoldDEMO.woff);
+}
 body{
     display: block;
     box-sizing: border-box;
     width: auto;
-    margin: 10px;
+    margin: 0;
 }
 .first-screen{
     background-image: url(/img/background_1hw.jpg);
@@ -39,12 +43,11 @@ body{
 }
 
 .buttons{
-    
-    display: grid;
+    display: flex;
     justify-content: center;
 }
-.buttons, a{
-    display: flex;
+.buttA{
+    display: grid;
     height: 50px;
     gap: 10%;
     grid-auto-rows: auto;
@@ -89,6 +92,11 @@ body{
 .h1Span{
     color: #46b1de;
 }
+.H3text{
+    font-family: MullerBold;
+    font-weight: bolder;
+    font-size: 19px;
+}
 .but2{
    padding-top: 100px;
     display: flex;
@@ -117,7 +125,7 @@ body{
     width: auto;
     position: absolute;
     z-index: 1;
-    top: 229px;
+    top: 213px;
     left: 65%;
 }
 /* -----SECTION-3-DIVS--------- */
@@ -245,7 +253,7 @@ body{
 }
 .gridIcon{
     display: flex;
-    width: 300px;
+    width: 330px;
     justify-content: start;
     align-items: center;
     text-align: start;
@@ -263,6 +271,7 @@ body{
     font-size: 18px;
     color: #46b1de;
     flex-basis: 70%;
+    margin: 0;
 
 }
 .textGridIcon1{
@@ -271,24 +280,30 @@ body{
     padding-left: 10px;
 }
 .textGridIconP{
-    font-family: MullerReg;     
+    font-family: MullerReg;    
+    font-size: 20px; 
 }
 /* ----SECTION-GRID-BLOX-END---- */
 .footer{
+    justify-content: space-between;
+    display: flex;
     background: linear-gradient(to right, #a1c7d4,#0781aa);
     padding-top: 50px;
     margin-top: 150px;
     width: 100%;
     height: auto;
 }
+.Fleft{
+    margin-left: 10px;
+}
 .Flogo{
     display: flex;
-    width: 300px;
+    width: 400px;
 }
 .FimgLogo{
-    height: 79px;
-    width: 79px;
-    flex-basis: 25%;
+    height: 80px;
+    width: 72px;
+    flex-basis: 20%;
 }
 .FDR{
     font-family: MullerReg;
@@ -296,25 +311,62 @@ body{
     color: #0f2c4a;
     text-transform: uppercase;
     font-size: xx-large;
-    flex-basis: 75%;
+    flex-basis: 70%;
 }
-.Home{
+.Fbut{
+    text-decoration: none;
     font-family: MullerReg;
     color: #0f2c4a;
     font-size: 30px;
+
 }
 .LengHowBlock{
     display: flex;
     font-family: MullerReg;
     color: #0f2c4a;
     font-size: 30px;
+    margin-top: 40px;
+}
+.SLeng{
+    width: auto;
 }
 .WHD{
     padding-left: 300px;
     font-family: MullerReg;
     color: #0f2c4a;
-    font-size: 30px;
     position: relative;
-    top: -34px;
+    top: -60px;
+    margin: 0;
 }
-
+.Fright{
+    position: relative;
+    left: -300px;
+    display: block;
+}
+.Fcont{
+    font-family: MullerReg;
+    font-weight: bold;
+    font-size: 30px;
+    color: #fff;
+    text-align: justify;
+}
+.Fcont25{
+    font-family: MullerReg;
+    color: #fff;
+    font-size: 25px;
+}
+.FcontTelInstMail{
+    position: relative;
+    top: -5px;
+    font-family: MullerReg;
+    color: #fff;
+    font-size: 25px;
+    text-decoration: none;
+}
+.copy{
+    position: relative;
+    left: 220px;
+    font-family: MullerReg;
+    color: #fff;
+    font-size: 15px;
+}
